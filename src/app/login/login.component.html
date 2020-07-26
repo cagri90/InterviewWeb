@@ -1,0 +1,15 @@
+<div id="body">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <div class="fadeIn first">
+            <img src="https://jaddwell.com/wp-content/uploads/2017/12/icon_male_trs-mm2nlnokr94eqin51ub44cnk9sj7vr3xanvd85v0ng.png" id="icon" alt="User Icon" />
+          </div>   
+          <form>
+            <input type="text"autocomplete="off" [(ngModel)]="user.username" id="login" class="fadeIn second" name="login" placeholder="Username">
+            <input type="password"autocomplete="off"[(ngModel)]="user.password"  id="password" class="fadeIn third" name="login" placeholder="******">
+            <input type="submit" class="fadeIn fourth" value="Log In"(click)="Login()">
+          </form>   
+         
+        </div>
+      </div>
+  </div>

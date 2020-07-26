@@ -1,0 +1,12 @@
+<div *ngIf="message else temp">
+    <h1>{{message?.subject}}</h1>
+    <div  class="tab-pane"[innerHTML]="message?.content"></div>
+</div>
+<ng-template #temp>
+    <div class="leftSide text-center">
+        <img style="margin-top: 15vh;" src="https://www.steeledale.com/wp-content/uploads/2018/04/Partnership.png" />
+        <h1>Welcome {{user?.name}} {{user?.surname}}</h1>
+        <h2>You have {{total?.item2}} unread messages of {{total?.item1}}  messages</h2>
+    </div>
+</ng-template>
+

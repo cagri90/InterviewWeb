@@ -1,0 +1,14 @@
+<div class="body">
+    <ul class="list-group elements-list">       
+        <li class="list-group-item" [ngClass]="message.isRead ? 'default' : 'active'" *ngFor="let message of messages"(click)="Read(message.id)">
+            <a class="nav-link" data-toggle="tab" >
+                <small class="float-right text-muted"> {{message.tarih}}</small>
+                <strong>{{message.fromName}}</strong>
+                <div class="small m-t-xs">
+                    <p class="m-b-xs"> {{message.subject | subjectPipe}} <br></p>
+                    <p class="m-b-none"[innerHTML]="message.content | subjectPipe"> </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

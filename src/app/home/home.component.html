@@ -1,0 +1,3 @@
+<app-header [message]="total" [user]="user"></app-header>
+<app-messages class="leftSide"(valueChange)='Read($event)' [messages]="messages" ></app-messages>
+<app-message class="rightSide"[message]="message"[total]="total"></app-message>
